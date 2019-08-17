@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="262dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:paddingLeft="80dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/menu_gofood" />
+
+    <TextView
+        android:id="@+id/gofood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Order Go food"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Nama"
+            android:textSize="25sp"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/txt1"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="210dp"
+            android:hint="Isi Nama"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Alamat"
+            android:textSize="25sp"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/txt2"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="270dp"
+            android:hint="Alamat"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Pesan"
+            android:textSize="25sp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/pesan"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/txt3"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="330dp"
+            android:hint="Pesan"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="100dp"
+        android:text="Order"
+        android:background="#96F530"/>
+
+</RelativeLayout>
